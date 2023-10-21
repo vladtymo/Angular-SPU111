@@ -1,7 +1,10 @@
+<!-- Pipes: uppercase lowercase date currency percent -->
+
 <div class="user-card">
     <h2>User Card</h2>
-    <p>ID: 44</p>
-    <p>Name: Oleg</p>
-    <p>Email: gaegs@gmail.com</p>
-    <p>Admin: Yes</p>
+    <p>ID: {{user.id}}</p>
+    <p>Name: {{user.name | uppercase}}</p>
+    <p>Birthdate: {{user.birthdate | date:'longDate'}}</p>
+    <p>Email: {{user.email}}</p>
+    <p>Admin: {{user.isAdmin ? 'Yes' : 'No'}}</p>
 </div>
