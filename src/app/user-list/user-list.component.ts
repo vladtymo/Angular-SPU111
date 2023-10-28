@@ -12,4 +12,8 @@ export class UserListComponent {
   clearList(): void {
     this.users = [];
   }
+
+  addUser(user: IUser) {
+    this.users.push(user);
+  }
 }

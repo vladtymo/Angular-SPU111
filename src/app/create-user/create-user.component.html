@@ -1,0 +1,26 @@
+<h2>
+    Create User Form
+</h2>
+
+<form [formGroup]="creationForm" (ngSubmit)="onSubmit()">
+    <label>
+        <span>Name:</span>
+        <input type="text" formControlName="name">
+    </label>
+    <label>
+        <span>Email:</span>
+        <input type="email" formControlName="email">
+    </label>
+    <label>
+        <span>Birthdate:</span>
+        <input type="date" formControlName="birthdate">
+    </label>
+    <label>
+        <span>Admin:</span>
+        <input type="checkbox" formControlName="isAdmin">
+    </label>
+    <div>
+        <button type="submit">Create</button>
+        <button type="reset">Cancel</button>
+    </div>
+</form>
